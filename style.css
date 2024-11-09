@@ -1,7 +1,7 @@
 :root {
-  --300: hsl(212, 45%, 89%);
-  --500: hsl(216, 15%, 48%);
-  --900: hsl(218, 44%, 22%);
+  --background-body: hsl(212, 45%, 89%);
+  --color-text: hsl(216, 15%, 48%);
+  --color-heading: hsl(218, 44%, 22%);
   --white: hsl(0, 0%, 100%);
 
   --font-family-principal: "Outfit", sans-serif;
@@ -19,7 +19,7 @@ body {
   font-size: 2rem;
   font-family: var(--font-family-principal);
   line-height: 1.2;
-  background-color: var(--300);
+  background-color: var(--background-body);
 }
 img {
   max-width: 100%;
@@ -51,8 +51,12 @@ img {
   align-items: center;
 }
 
+.card__heading {
+  color: var(--color-heading);
+}
+
 .card__text {
-  color: var(--500);
+  color: var(--color-text);
   font-size: 1.5rem;
   margin-top: 0;
 }
